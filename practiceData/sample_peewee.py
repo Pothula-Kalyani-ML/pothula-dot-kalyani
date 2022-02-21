@@ -1,29 +1,33 @@
-import os.path
-import os
 from peewee import *
 
-#from peewee import SqliteDatabase, Model,TextField ,IntegerField
-file_path = os.path.join(os.getcwd(),'test_data.db')
-print(os.path.exists(file_path))
-db=SqliteDatabase(file_path)
-print(db)
-class employee(Model):
-    class Meta:
-        Database=db
-        db_table='employee_details'
-class employee_details(employee):
-      id= PrimaryKeyField
-      name= TextField
-      email= TextField
-      gender=ForeignKeyField	
-      contact=IntegerField
-      age= IntegerField
-db.connect()        
-if __name__=='__main__': 
+database = SqliteDatabase('test_data.db', **{})
 
- employees=db.select()
- for employee in employees:
-        print(employee)   
-   
-  
-db.close()
+class UnknownField(object):
+    def __init__(self, *_, **__): pass
+
+class BaseModel(Model):
+    class Meta:
+        database = database
+
+class employee_details(BaseModel):
+        email = TextField()
+        name = TextField()
+        gender = IntegerField()
+        contact = IntegerField()
+        age = IntegerField()
+        class Meta:
+            table_name = 'employee_details'
+
+class gender(BaseModel):
+    id = IntegerField(primary_key=True)
+    gender = TextField()
+
+    class Meta:
+        table_name = 'gender'  
+emp=employee_details.select()
+for x in emp:
+    print(x)
+g=gender.select() 
+for g1 in g:
+    print(g1) 
+database.close()   
