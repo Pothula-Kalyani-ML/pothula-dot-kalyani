@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>Age</th>
+        </tr>
+        <tbody id="employeeData">
+
+            </tr>
+
+    </table>
+
+</body>
+
+<script>
+    fetch('http://127.0.0.1:5000/employees').then(function (response) {
+        return response.json();
+    }).then(function (data) {
+        var employeeArray = data;
+        for (var i = 0; i < employeeArray.length; i++) {
+            var employeeDataAppend = document.createElement('tr');
+            employeeDataAppend.className = 'employeeDataAppend';
+            employeeDataAppend.innerHTML =
+                `
+                   <td>`+ employeeArray[i].id + `</td>
+    <td>`+ employeeArray[i].name + `</td>
+    <td>` + employeeArray[i].email + `</td>
+    <td>` + employeeArray[i].gender + `</td>
+    <td>` + employeeArray[i].age + `</td> `
+            document.getElementById('employeeData').appendChild(employeeDataAppend);
+        }
+    })
+
+</script>
+
+</html>
