@@ -1,0 +1,4 @@
+INFO:__main__:read employee data:{'id': 111, 'name': 'vxx', 'email': 'vvvv@ff', 'gender': 2, 'contact': 111111111111111333, 'age': 20}
+INFO:__main__:updated employee data:{'id': 111, 'name': 'c....', 'email': 'cccccc@cccc', 'gender': 2, 'contact': 124563987, 'age': 20}
+INFO:__main__:deleted employee data:111
+INFO:__main__:inserted new employee :{'id': 112, 'email': 'iii@ii', 'name': 'iiii', 'gender': '2', 'contact': '554545', 'age': '21'}
