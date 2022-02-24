@@ -32,12 +32,13 @@ db = Database(file_path)
 employee_details.objects.backend = db
 gender.objects.backend = db
 employee_id=int(input("enter employee id :"))
+print('select an action  : read,update,insert,delete')
 actionto=input("enter action to be performed : ")
 
 def read_emp_data(employee_id):
     emp=employee_details.objects.get(pk=employee_id)
     logger.info('read employee data:{}'.format(emp))  
-
+    print(emp)
 def update_emp_data(employee_id):
     emp=employee_details.objects.get(pk=employee_id)
     emp["email"]=input("enter email :")
