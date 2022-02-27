@@ -1,10 +1,5 @@
 from perimeter import * 
 import math
-
-'''class g_data_area(g_data):
-    def __init__(self,area,geometricShape,radius,sides,pm):
-        self.area=area
-        g_data.__init__(self,geometricShape,radius,sides,pm)'''
  
 obj=g_data('','',[])
 
@@ -41,7 +36,7 @@ def setareac_of_triangle(s):
     else: 
         return "invalid input"
     
-    
+
 def setareac_of_rectangle(s):
     if len(s)==4:
         s.sort()

@@ -12,11 +12,10 @@ def data_receiver():  #receive data from postman body in json format
 app = Flask(__name__)
 @app.route("/area", methods=["POST"]) 
 def area_cal():    
-  cal_area={"area":" "}  
-  data=data_receiver()
-  cal_area["area"]=area(data)  # function to calculate area of geometric shapes imported from area.py
-  print(data)
-  return jsonify(cal_area)
+    cal_area={"area":" "}  
+    data=data_receiver()
+    cal_area["area"]=area(data)  # function to calculate area of geometric shapes imported from area.py
+    return jsonify(cal_area)
 
 @app.route("/perimeter", methods=["POST"]) 
 def perimeter_cal(): 
