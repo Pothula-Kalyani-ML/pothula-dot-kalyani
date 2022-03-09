@@ -1,0 +1,6 @@
+inputString=input("enter the string:")
+middleString=input("enter the middle string:")
+midLength=(len(inputString)/2)
+print(inputString.strip())
+result="{} {} {}".format(inputString[:int(midLength)],middleString,inputString[int(midLength):])
+print(" ".join(result.split()))
