@@ -1,17 +1,19 @@
-array=list(map(int, input("elements of array:-").strip().split()))
-print(array)
-length=len(array)
-print(length)
-count=length
-while(count): 
-    for i in range(0,count-1):
-        if array[i] > array[i+1]:
-            temp=array[i]
-            array[i]=array[i+1]
-            array[i+1]=temp
-        for i in range(length):
-            print(array[i],end=" ")
-        print(end=" ")
-           
-    print(" ")        
-    count=count-1  
+def bubblesort(array):
+    length=len(array)
+    for j in range(len(array)-1):
+        for i in range(0,length-1):
+            sequenceChange=False
+            if array[i] > array[i+1]:
+                array[i],array[i+1]=array[i+1],array[i]
+                sequenceChange=True   
+        length=length-1 
+        if sequenceChange==False:
+            return array
+    return array     
+if __name__ == "__main__":  
+    print("enter array elements with spaces ")              
+    array=list(map(int,input("array elements :").strip().split())) 
+    print(array)  
+    sortedArray=bubblesort(array)
+    print("sorted array",sortedArray)
+     

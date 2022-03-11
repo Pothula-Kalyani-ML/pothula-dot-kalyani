@@ -15,11 +15,15 @@ for l in vowels:
             for i in vowels[3:]:
                 vowels.extend(i)
                 vowels.remove(i)
-                output.extend(vowels)
+                #output.extend(vowels)
                 result.append(vowels[:5])
+                
+                
+
                 count+=1
     
 print(count)   
-#print(output)
+
+result=[''.join(i) for i in result]
 print(result)
-                  
+                                    

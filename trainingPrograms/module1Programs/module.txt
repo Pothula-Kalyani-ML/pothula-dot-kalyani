@@ -1,6 +1,7 @@
 1.Write a Python program to create all possible strings by using 'a', 'e', 'i', 'o', 'u'. Use the characters exactly once
 
-2.Write a Python program to read a file that contains lines of text. Convert each line into a list, list out all unique words and their frequency across whole file
+2.Write a Python program to read a file that contains lines of text. Convert each line into a list,
+ list out all unique words and their frequency across whole file
 
 3.Check if a string is Palindrome
 
