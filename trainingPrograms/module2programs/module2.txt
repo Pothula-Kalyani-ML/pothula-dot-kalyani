@@ -1,0 +1,52 @@
+Module 2
+
+1)Take the CSV file
+
+	https://docs.google.com/spreadsheets/d/1Asho4m7yuEgEvqvzuPGq8q_YH8aLoGClYHhDjV83h2I/edit?usp=sharing
+
+	Read the CSV file
+	Provide mean of CPU Util, RAM Util  for the whole period. Result should be in JSON format
+	Find the times when CPU Util and RAM Util are highest. Result should be in JSON array  consisting of following tuple <CPU Util, Time, Value> , <RAM Util, Time, Value>
+
+2)Write a Python program to create a Caesar encryption
+	Note : In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift cipher, Caesar's code or Caesar shift, is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, D would be replaced by A, E would become B, and so on. The method is named after Julius Caesar, who used it in his private correspondence.
+
+3)Remove leading zeros from IP address e.g. print(remove_zeros_from_ip("255.024.01.01"))
+
+4)Write a Python program to find common items from two lists
+
+5)Normalization of URLs
+	Read file 
+	https://docs.google.com/document/d/1KXP80gMZTqABJEc2a81z17HrV_CqMdEmrUNXa9tIY7k/edit?usp=sharing
+
+
+	If you see 2 URLs  post http://www.myApp/1/save and 
+	http://www.myApp/2/save ,
+	they should be replaced by http://www.myApp/*/save 
+	Get a list of normalized patterns of URLs
+
+6)job status
+	Read file https://docs.google.com/spreadsheets/d/1_UqIOAJBb8vJhLv_kfT3VOz1O8PcNflbUSZ8xqZCrEc/edit?usp=sharing
+
+	Each row contains - jobId, status, time
+	When a job 1 starts, an entry is present in the table  (1, started, time)
+	When a job completes, an entry is again made in table (1, completed, time)
+	Parse the whole file and create a new csv file with entries (jonId, startTime, endTime, duration, status)
+	If a job is not ended , then the end-time and duration will be empty and status is “in progress”
+	Store the results in Module2_4.csv
+
+7)Write a Python script to check whether a given key already exists in a dictionary.
+
+8)Iterate through a dictionary
+	Read Module2_4.csv file
+	Store the data in a dictionary where the key is JobId
+	Get JobId from console and print the details of the Job
+
+9)Write a Python program to combine two dictionary adding values for common keys. 
+	d1 = {'a': 100, 'b': 200, 'c':300}
+	d2 = {'a': 300, 'b': 200, 'd':400}
+	Sample output: Counter({'a': 400, 'b': 400, 'd': 400, 'c': 300})
+
+10)Perform Matrix multiplication
+
+
