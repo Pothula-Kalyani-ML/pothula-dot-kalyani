@@ -1,0 +1,13 @@
+GET /snappyflow/cloudprofile/1
+GET /snappyflow/cloudprofile/3/ekey
+GET /snappyflow/cloudprofile/359
+GET /snappyflow/applications/15/endpoints
+GET /snappyflow/applications/15/endpoints/4
+GET /snappyflow/applications/15/endpoints/2
+GET /snappyflow/applications/15/endpoints/1
+GET /snappyflow/applications/8/endpoints
+GET /snappyflow/cloudprofile/3
+GET /snappyflow/cloudprofile/4/ekey
+GET  /snappyflow/cloudprofile/*
+GET /snappyflow/applications/*/endpoints
+GET /snappyflow/applications/*/endpoints/*
