@@ -29,7 +29,6 @@ def DataCollectionInJSON(DATA):
             resultList.append(i)
     
     for index ,data in enumerate(resultList):
-        
         count=0
         for  i in data:
             if i == ":":

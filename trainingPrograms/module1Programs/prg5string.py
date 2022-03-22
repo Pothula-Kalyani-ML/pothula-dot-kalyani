@@ -13,6 +13,7 @@ def repeatedElement(listOfString):
             if((listOfString[i]==listOfString[j])):
                 repeated.append(listOfString[i])
         return repeated  
+        
 def uniqueElements(listOfString):
     duplicateItems=repeatedElement(listOfString)
     unRepeatedList=unRepeatedElements(listOfString)
@@ -23,9 +24,6 @@ def uniqueElements(listOfString):
  
 
 if __name__ == "__main__":  
-
-    print("select one of the choice 1=numeric ,0=alphanumeric")
-    choice=input("enter choice: ")
     inputString=input("enter the string of words with comma separator:")
     print(inputString)
     listOfString=inputString.split(",")   
@@ -36,7 +34,4 @@ if __name__ == "__main__":
     unique=uniqueElements(listOfString)
     print("non repeated elements in the list",unique)
 
-    if(choice==1):
-        unRepeatedList=[int(x) for x in unRepeatedList]
-        unique=[int(x) for x in unique]
-
+   
