@@ -1,0 +1,249 @@
+>>>>>>>>>> 1 >>>>>>>>>>
+Electronic Shop
+
+A person wants to determine the most expensive computer keyboard and USB drive that can be purchased with a give budget. Given price lists for keyboards and USB drives and a budget, find the cost to buy them. If it is not possible to buy both items, return -1.
+Example
+budget = 60
+keyboards_prices = [40, 50, 60]
+drives_prices = [5, 8, 12]
+The person can buy a 40 rupees keyboard + 12 rupees USB drive = 52, or a 50 rupees keyboard + 8 rupees USB drive = 58. Choose the latter as the more expensive option and return 58.
+
+>>>>>>>>>> 2 >>>>>>>>>>
+Given a number n, we will write a program to print the pattern G over n lines or rows.
+Examples: 
+
+Input : 7
+Output :
+  ***  
+ *     
+ *     
+ * *** 
+ *   * 
+ *   * 
+  ***  
+
+Input : 9
+Output :
+  *****  
+ *       
+ *       
+ *       
+ *   *** 
+ *     * 
+ *     * 
+ *     * 
+  *****  
+
+>>>>>>>>>> 3 >>>>>>>>>>
+Python Program to Create a Lap Timer ( similar to windows clock timer )
+
+ENTER to count laps.
+Press CTRL+C to stop
+
+Lap No. 1
+Total Time: 1.09
+Lap Time: 1.09
+********************
+
+Lap No. 2
+Total Time: 2.66
+Lap Time: 1.41
+********************
+Done
+
+>>>>>>>>>> 4 >>>>>>>>>>
+Python Program for Program to Print Matrix in Z form
+
+Input : mat[][] =  {1, 2, 3,
+                    4, 5, 6,
+                    7, 8, 9}
+Output : 1 2 3 5 7 8 9
+
+Input : mat[][] = {5, 19, 8, 7,
+                   4, 1, 14, 8,
+                   2, 20, 1, 9,
+                   1, 2, 55, 4}
+Output: 5 19 8 7 14 20 1 2 55 4
+
+>>>>>>>>>> 5 >>>>>>>>>>
+Write a Python program to find the sum of the even elements that are at odd indices.
+
+Input:
+[1, 2, 3, 4, 5, 6, 7]
+Output:
+12
+Input:
+[1, 2, 8, 3, 9, 4]
+Output:
+6
+
+
+>>>>>>>>>> 6 >>>>>>>>>>
+The program takes a number n and prints the pascal’s triangle having n number of rows.
+
+Case 1: 
+Enter number of rows: 3
+               1 
+            1      1 
+         1      2      1 
+ 
+Case 2:
+Enter number of rows: 4
+                  1 
+               1      1 
+            1      2      1 
+         1      3      3      1
+
+>>>>>>>>>> 7 >>>>>>>>>>
+Python Program to Print an Identity Matrix
+Program reads a number n and print an identity matrix of the desired size.
+
+Case 1:
+Enter a number: 4
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+ 
+Case 2:
+Enter a number: 5
+1 0 0 0 0 
+0 1 0 0 0 
+0 0 1 0 0 
+0 0 0 1 0 
+0 0 0 0 1
+
+>>>>>>>>>> 8 >>>>>>>>>>
+The program takes two numbers and prints the LCM of two numbers.
+
+Case 1:
+Enter the first number:5
+Enter the second number:3
+LCM is: 15
+ 
+Case 2:
+Enter the first number:15
+Enter the second number:20
+LCM is: 60
+
+
+
+
+
+
+
+
+
+
+>>>>>>>>>> 9 >>>>>>>>>>
+Program to print hollow pyramid and diamond shape
+
+Input rows: 6
+Output:
+     #
+    # #
+   #   #
+  #     #
+ #       #
+#         #
+######
+
+      #
+     # #
+    #   #
+   #     #
+  #       #
+ #         #
+ #         #
+  #       #
+   #     #
+    #   #
+     # #
+      #
+
+
+
+
+>>>>>>>>>> 10 >>>>>>>>>>
+
+Make a Grocery List for super market shopping with name, price and quantity; if the list already contains an item then only update the price
+and quantity it should not append the item name again. Ask user his/her budget initially 
+and minus the budget after adding a new item in the list. If budgets go zero/0 then no more item could be bought and if 
+some money left and user add item greater than budget left then inform “over price” or any other message. 
+After the list is made any money left in the budget it should show an item within the budget from the list made. 
+VALIDATION is a must.
+
+User GO with following question 
+Enter Your budget : 500 
+1.Add an item
+2.Exit
+Enter your choice : 1
+
+Enter product : corn flour
+Enter quantity : 1.5 kg
+Enter Price : 100
+
+Amount left : 400
+
+1.Add an item
+2.Exit
+Enter your choice : 1
+
+Enter product : wheat
+Enter quantity : 2 kg
+Enter Price : 100
+
+Amount left : 300
+
+1.Add an item
+2.Exit
+Enter your choice : 1
+
+Enter product : corn flour
+Enter quantity : 2 kg
+Enter Price : 250
+
+Amount left : 150
+
+1.Add an item
+2.Exit
+Enter your choice : 1
+
+Enter product : rice
+Enter quantity : 5 kg
+Enter Price : 300
+
+Can't Buy the product ###(because budget left is 150)
+
+1.Add an item
+2.Exit
+Enter your choice : 1
+
+Enter product : xyz 
+Enter quantity : 1 kg
+Enter Price : 50
+
+Amount left : 100
+
+1.Add an item
+2.Exit
+Enter your choice : 2
+
+Amount left can buy you wheat 
+
+GROCERY LIST is:
+Product name   Quantity   Price
+corn flour      2 kg        250
+wheat           2 kg        100
+xyz             1 kg         50
+
+
+
+
+
+
+
+
+
+
+

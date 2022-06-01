@@ -1,0 +1,21 @@
+---
+
+ -  name: milk powder
+    price_per_unit: 1000
+    no_of_units_available: 1000
+ -  name: rice
+    price_per_unit: 55
+    no_of_units_available: 1000
+ -  name: wheat
+    price_per_unit: 68
+    no_of_units_available: 500
+ - name: ground_nut
+   price_per_unit: 80
+   no_of_units_available: 500
+ - name: cooking_oil
+   price_per_unit: 120
+   no_of_units_available: 500
+ - name: cooking_oil
+   price_per_unit: 100
+   no_of_units_available: 500
+
